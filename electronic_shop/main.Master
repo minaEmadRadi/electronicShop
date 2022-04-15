@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="electronic_shop.guest" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 598px;
+        }
+        .auto-style2 {
+            height: 22px;
+            text-align: right;
+        }
+        .auto-style3 {
+            height: 141px;
+            text-align: center;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 204px;
+        }
+        .auto-style5 {
+            height: 322px;
+            text-align: center;
+        }
+        .auto-style6 {
+            height: 21px;
+        }
+        .auto-style7 {
+            text-align: center;
+        }
+        .auto-style8 {
+            height: 47px;
+            background-color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <table class="auto-style4">
+                            <tr>
+                                <td class="auto-style2">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style2">
+                                    <asp:Label ID="Label1" runat="server" style="text-align: left; color: #C0C0C0; font-style: italic; font-size: medium" Text="Label" Visible="False"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style3">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/imges/hello.jpg" Width="480px" Height="270px" ImageAlign="Middle" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style7">
+                                    <asp:TextBox ID="TextBox1" runat="server" Visible="False">BRAND</asp:TextBox>
+                                    <asp:Button ID="Button4" runat="server" Text="search" OnClick="Button4_Click" Visible="False" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style7">
+                                    &nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        © 2021 Elkoisin.com</td>
+                </tr>
+            </table>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
